@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://donorboost.co.uk/sitemap.xml
