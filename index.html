@@ -20,7 +20,7 @@
 <meta name="twitter:title" content="DonorBoost | Automated Gift Aid Claims Software for UK Charities">
 <meta name="twitter:description" content="DonorBoost automates Gift Aid claims for UK charities, schools and synagogues. Upload bank data, reconcile donations and produce your HMRC claim in a fraction of the time spreadsheets take.">
 <meta name="twitter:image" content="https://donorboost.co.uk/og-image.png">
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "DonorBoost", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "url": "https://donorboost.co.uk/", "image": "https://donorboost.co.uk/og-image.png", "description": "DonorBoost automates Gift Aid claims for UK charities, schools and synagogues. Upload bank data, reconcile donations and produce your HMRC claim in a fraction of the time spreadsheets take.", "audience": {"@type": "Audience", "audienceType": "UK charities, schools, synagogues and charitable trusts"}}, {"@context": "https://schema.org", "@type": "Organization", "name": "DonorBoost", "url": "https://donorboost.co.uk/", "logo": "https://donorboost.co.uk/logo.png", "email": "info@donorchase.com"}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much is Gift Aid worth?", "acceptedAnswer": {"@type": "Answer", "text": "Gift Aid lets a charity reclaim basic rate tax on donations from UK taxpayers. That adds 25p to every £1 donated, so a £100 donation becomes £125 for the charity."}}, {"@type": "Question", "name": "What is a Gift Aid declaration?", "acceptedAnswer": {"@type": "Answer", "text": "A declaration is the donor's confirmation that they are a UK taxpayer and want the charity to claim Gift Aid on their gifts. It can be given in writing, online or verbally, and the charity must keep a record of it."}}, {"@type": "Question", "name": "How far back can we claim Gift Aid?", "acceptedAnswer": {"@type": "Answer", "text": "Charities can usually claim Gift Aid up to four years after the end of the accounting period in which the donation was received."}}, {"@type": "Question", "name": "Can schools claim Gift Aid on voluntary contributions?", "acceptedAnswer": {"@type": "Answer", "text": "Schools that are charities, or have an associated charity, can claim Gift Aid on genuine voluntary donations. Payments that are really fees, or that buy something in return, do not qualify."}}, {"@type": "Question", "name": "What is the Gift Aid Small Donations Scheme (GASDS)?", "acceptedAnswer": {"@type": "Answer", "text": "GASDS lets charities claim a top-up on small cash and contactless donations of £30 or less where no declaration is held, up to a limit of £8,000 in donations per tax year."}}, {"@type": "Question", "name": "Does DonorBoost work with Xero?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can connect your Xero organisation and map donations to your nominal ledgers."}}]}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "DonorBoost", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "url": "https://donorboost.co.uk/", "image": "https://donorboost.co.uk/og-image.png", "description": "DonorBoost automates Gift Aid claims for UK charities, schools and synagogues. Upload bank data, reconcile donations and produce your HMRC claim in a fraction of the time spreadsheets take.", "audience": {"@type": "Audience", "audienceType": "UK charities, schools, synagogues and charitable trusts"}}, {"@context": "https://schema.org", "@type": "Organization", "name": "DonorBoost", "url": "https://donorboost.co.uk/", "logo": "https://donorboost.co.uk/logo.png", "email": "info@donorchase.com"}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much is Gift Aid worth?", "acceptedAnswer": {"@type": "Answer", "text": "Gift Aid lets a charity reclaim basic rate tax on donations from UK taxpayers. That adds 25p to every £1 donated, so a £100 donation becomes £125 for the charity."}}, {"@type": "Question", "name": "What is a Gift Aid declaration?", "acceptedAnswer": {"@type": "Answer", "text": "A declaration is the donor's confirmation that they are a UK taxpayer and want the charity to claim Gift Aid on their gifts. It can be given in writing, online or verbally, and the charity must keep a record of it."}}, {"@type": "Question", "name": "How far back can we claim Gift Aid?", "acceptedAnswer": {"@type": "Answer", "text": "Charities can usually claim Gift Aid up to four years after the end of the accounting period in which the donation was received."}}, {"@type": "Question", "name": "Can schools claim Gift Aid on voluntary contributions?", "acceptedAnswer": {"@type": "Answer", "text": "Schools that are charities, or have an associated charity, can claim Gift Aid on genuine voluntary donations. Amounts that are really fees, or that buy something in return, do not qualify."}}, {"@type": "Question", "name": "What is the Gift Aid Small Donations Scheme (GASDS)?", "acceptedAnswer": {"@type": "Answer", "text": "GASDS lets charities claim a top-up on small cash and contactless donations of £30 or less where no declaration is held, up to a limit of £8,000 in donations per tax year."}}, {"@type": "Question", "name": "Does DonorBoost work with Xero?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can connect your Xero organisation and map donations to your nominal ledgers."}}, {"@type": "Question", "name": "What is the difference between DonorBoost and DonorChase?", "acceptedAnswer": {"@type": "Answer", "text": "DonorBoost handles Gift Aid: declarations, reconciling bank data and producing your HMRC claim. DonorChase tracks voluntary contributions and pledges and helps you chase what is outstanding. You can use either one on its own, or both together."}}]}]</script>
 <title>DonorBoost | Automated Gift Aid Claims Software for UK Charities</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
@@ -133,6 +133,25 @@ section { padding-block: clamp(48px, 7vw, 84px); }
 .faq details[open] summary::after { content: "–"; }
 .faq details p { padding-bottom: 18px; color: var(--muted); max-width: 70ch; }
 
+/* DonorChase */
+.dc { display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+.dc-text { min-width: 0; }
+.dc-text h2 { font-size: clamp(1.7rem, 3.4vw, 2.35rem); font-weight: 700; letter-spacing: -0.015em; }
+.dc-text > p:not(.eyebrow) { margin-top: 14px; color: var(--muted); max-width: 60ch; }
+.dc-list { margin: 18px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.dc-list li { display: flex; gap: 10px; align-items: baseline; }
+.dc-list li::before { content: ""; width: 14px; height: 6px; background: var(--pink); flex: none; transform: translateY(-3px); }
+.dc-text .ctas { margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap; }
+.dc-flow { display: grid; gap: 10px; min-width: 0; }
+.dc-card { border-radius: 12px; padding: 20px 22px; display: grid; gap: 4px; }
+.dc-card.chase { background: var(--pink-soft); border: 1.5px solid var(--pink); }
+.dc-card.boost { background: var(--mint-soft); border: 1.5px solid var(--mint); }
+.dc-name { font: 800 1.3rem var(--display); }
+.dc-does { color: var(--muted); }
+.dc-arrow { text-align: center; font: 700 1.4rem var(--display); color: var(--green); }
+.dc-note { text-align: center; color: var(--muted); font-size: 0.95rem; }
+footer a { color: var(--muted); }
+
 /* Contact */
 .contact { background: var(--ink); color: #ffffff; border-radius: 14px; padding: clamp(28px, 5vw, 56px); display: grid; grid-template-columns: 1.3fr 1fr; gap: 28px; align-items: center; position: relative; overflow: hidden; }
 .contact::before { content: ""; position: absolute; left: 0; bottom: 0; width: 45%; height: 8px; background: var(--pink); }
@@ -153,6 +172,7 @@ footer .wrap { display: flex; justify-content: space-between; align-items: cente
 footer .logo { height: 32px; }
 
 @media (max-width: 860px) {
+  .dc { grid-template-columns: 1fr; }
   .hero .wrap, .contact { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
   .features { grid-template-columns: 1fr 1fr; }
@@ -167,6 +187,7 @@ footer .logo { height: 32px; }
   <div class="wrap">
     <a href="#top" aria-label="DonorBoost home"><img class="logo" src="/logo.png" width="1015" height="232" alt="DonorBoost – Automated Gift Aid Claims"></a>
     <nav class="nav" aria-label="Main">
+      <a class="nav-link" href="https://donorchase.com">DonorChase</a>
       <a class="nav-link" href="#contact">Get in touch</a>
       <a class="btn" href="https://app.donorboost.co.uk">Log in</a>
     </nav>
@@ -212,7 +233,7 @@ footer .logo { height: 32px; }
         <div class="step">
           <span class="n">1</span>
           <h3>Upload bank data</h3>
-          <p>Import your bank transactions for the period. DonorBoost matches incoming payments to donors you already know.</p>
+          <p>Import your bank transactions for the period. DonorBoost matches incoming donations to donors you already know.</p>
         </div>
         <div class="step">
           <span class="n">2</span>
@@ -241,6 +262,40 @@ footer .logo { height: 32px; }
         <div class="feat"><h3>Xero integration</h3><p>Connect your Xero organisation and map donations to your nominal ledgers.</p></div>
         <div class="feat"><h3>Exclusion rules</h3><p>Set rules once to keep refunds, transfers and other non-donations out of your claims.</p></div>
         <div class="feat"><h3>Multiple charities</h3><p>Run claims for several organisations, each with its own bank accounts and tax years.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="donorchase">
+    <div class="wrap">
+      <div class="dc">
+        <div class="dc-text">
+          <p class="eyebrow">From the same team</p>
+          <h2>Need to chase donations too? Meet DonorChase.</h2>
+          <p>DonorChase tracks voluntary contributions and pledges for every donor, shows who is up to date and who is behind, and helps your office follow up. It syncs with Xero every night, so your figures stay current without extra data entry.</p>
+          <ul class="dc-list">
+            <li>See each donor's giving against what they pledged</li>
+            <li>Chase outstanding pledges by email or WhatsApp</li>
+            <li>Nightly sync with Xero</li>
+            <li>Built for schools, membership charities and fundraising events</li>
+          </ul>
+          <div class="ctas">
+            <a class="btn" href="https://donorchase.com">Visit DonorChase</a>
+            <a class="btn ghost" href="#contact">Ask about both</a>
+          </div>
+        </div>
+        <div class="dc-flow" aria-label="How DonorChase and DonorBoost work together">
+          <div class="dc-card chase">
+            <span class="dc-name">DonorChase</span>
+            <span class="dc-does">Tracks and chases contributions and pledges</span>
+          </div>
+          <div class="dc-arrow" aria-hidden="true">↓</div>
+          <div class="dc-card boost">
+            <span class="dc-name">DonorBoost</span>
+            <span class="dc-does">Claims the Gift Aid on those donations from HMRC</span>
+          </div>
+          <p class="dc-note">Use either one on its own, or both together.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -281,7 +336,7 @@ footer .logo { height: 32px; }
         </details>
         <details>
           <summary>Can schools claim Gift Aid on voluntary contributions?</summary>
-          <p>Schools that are charities, or have an associated charity, can claim Gift Aid on genuine voluntary donations. Payments that are really fees, or that buy something in return, do not qualify. DonorBoost lets you set exclusion rules so those payments stay out of your claims.</p>
+          <p>Schools that are charities, or have an associated charity, can claim Gift Aid on genuine voluntary donations. Amounts that are really fees, or that buy something in return, do not qualify. DonorBoost lets you set exclusion rules so those payments stay out of your claims.</p>
         </details>
         <details>
           <summary>What is the Gift Aid Small Donations Scheme (GASDS)?</summary>
@@ -289,11 +344,15 @@ footer .logo { height: 32px; }
         </details>
         <details>
           <summary>Why not just use a spreadsheet?</summary>
-          <p>Spreadsheets work until donors pay by several methods, declarations go missing, or a donation is claimed twice. DonorBoost matches bank data to donors, tracks which claim each donation went on and saves up to 80% of the time each claim takes.</p>
+          <p>Spreadsheets work until donors give in several different ways, declarations go missing, or a donation is claimed twice. DonorBoost matches bank data to donors, tracks which claim each donation went on and saves up to 80% of the time each claim takes.</p>
         </details>
         <details>
           <summary>Does DonorBoost work with Xero?</summary>
           <p>Yes. You can connect your Xero organisation and map donations to your nominal ledgers.</p>
+        </details>
+        <details>
+          <summary>What is the difference between DonorBoost and DonorChase?</summary>
+          <p>DonorBoost handles Gift Aid: declarations, reconciling bank data and producing your HMRC claim. <a href="https://donorchase.com">DonorChase</a> tracks voluntary contributions and pledges and helps you chase what is outstanding. You can use either one on its own, or both together.</p>
         </details>
       </div>
     </div>
@@ -323,7 +382,7 @@ footer .logo { height: 32px; }
 <footer>
   <div class="wrap">
     <img class="logo" src="/logo.png" width="1015" height="232" alt="DonorBoost">
-    <span>© 2026 DonorBoost · info@donorchase.com</span>
+    <span>© 2026 DonorBoost · From the team behind <a href="https://donorchase.com">DonorChase</a> · info@donorchase.com</span>
   </div>
 </footer>
 
